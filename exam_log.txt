@@ -1,0 +1,356 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026093616
+Username: DESKTOP-9UAJCUK\lingv
+RunAs User: DESKTOP-9UAJCUK\lingv
+Configuration Name: 
+Machine: DESKTOP-9UAJCUK (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 11272
+PSVersion: 5.1.22621.6060
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6060
+BuildVersion: 10.0.22621.6060
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\lingv\Desktop\Exam\exam_log.txt
+PS C:\Users\lingv\Desktop\Exam> git clone https://github.com/krasigel/SEDO_Regular-Exam-1.git
+Cloning into 'SEDO_Regular-Exam-1'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 4 (from 1)
+Receiving objects: 100% (5/5), done.
+PS C:\Users\lingv\Desktop\Exam> git clone https://github.com/krasigel/SEDO_Regular-Exam-2.git
+Cloning into 'SEDO_Regular-Exam-2'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+PS C:\Users\lingv\Desktop\Exam> git clone https://github.com/krasigel/SEDO_Regular-Exam-3.git
+Cloning into 'SEDO_Regular-Exam-3'...
+remote: Enumerating objects: 177, done.
+remote: Counting objects: 100% (177/177), done.
+remote: Compressing objects: 100% (116/116), done.
+remote: Total 177 (delta 56), reused 169 (delta 56), pack-reused 0 (from 0)
+Receiving objects: 100% (177/177), 1.32 MiB | 3.91 MiB/s, done.
+Resolving deltas: 100% (56/56), done.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is up to date with 'origin/bugfix/change-button'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit index"
+[bugfix/change-button 6f98a5b] First commit index
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit scripts"
+[bugfix/change-button 92f5860] First commit scripts
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit style"
+[bugfix/change-button 56de4d8] First commit style
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+56de4d8 (HEAD -> bugfix/change-button) First commit style
+92f5860 First commit scripts
+6f98a5b First commit index
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git rebase -i HEAD~3
+[detached HEAD 900011f] First commit
+ Date: Sun Oct 26 10:14:55 2025 +0200
+ 3 files changed, 8 insertions(+), 6 deletions(-)
+Successfully rebased and updated refs/heads/bugfix/change-button.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+900011f (HEAD -> bugfix/change-button) First commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Second commit index"
+[bugfix/change-button db1bf3b] Second commit index
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m  "Second commit scripts"
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Second commit style"
+[bugfix/change-button 1d163df] Second commit style
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+1d163df (HEAD -> bugfix/change-button) Second commit style
+db1bf3b Second commit index
+900011f First commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git rebase -i HEAD~3
+[detached HEAD 3ef2b3b] Second commit
+ Date: Sun Oct 26 10:14:55 2025 +0200
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+Successfully rebased and updated refs/heads/bugfix/change-button.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+3ef2b3b (HEAD -> bugfix/change-button) Second commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit index"
+[bugfix/change-button e21e0a0] Third commit index
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit style"
+[bugfix/change-button b45deb0] Third commit style
+ 1 file changed, 2 insertions(+)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit style"
+[bugfix/change-button fd5e46a] Third commit style
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+fd5e46a (HEAD -> bugfix/change-button) Third commit style
+b45deb0 Third commit style
+e21e0a0 Third commit index
+3ef2b3b Second commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git rebase -i HEAD~4
+[detached HEAD 2ca8f7d] Commit for branch bugfix/change-button
+ Date: Sun Oct 26 10:14:55 2025 +0200
+ 3 files changed, 9 insertions(+), 8 deletions(-)
+Successfully rebased and updated refs/heads/bugfix/change-button.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+2ca8f7d (HEAD -> bugfix/change-button) Commit for branch bugfix/change-button
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 688 bytes | 229.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/krasigel/SEDO_Regular-Exam-1.git
+   d5ba0bc..2ca8f7d  bugfix/change-button -> bugfix/change-button
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git checkout chore/display-logic
+branch 'chore/display-logic' set up to track 'origin/chore/display-logic'.
+Switched to a new branch 'chore/display-logic'
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is up to date with 'origin/chore/display-logic'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit index"
+[chore/display-logic 115dbc9] First commit index
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit scripts"
+[chore/display-logic ef7c800] First commit scripts
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "First commit style"
+[chore/display-logic d8633e4] First commit style
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+d8633e4 (HEAD -> chore/display-logic) First commit style
+ef7c800 First commit scripts
+115dbc9 First commit index
+d5ba0bc (origin/main, origin/chore/display-logic, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git rebase -i HEAD~3
+[detached HEAD 41c70e5] First commit
+ Date: Sun Oct 26 10:27:31 2025 +0200
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+Successfully rebased and updated refs/heads/chore/display-logic.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+41c70e5 (HEAD -> chore/display-logic) First commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Second commit index"
+[chore/display-logic ec66b88] Second commit index
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit index"
+[chore/display-logic bc9d18a] Third commit index
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit scripts"
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git add .
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git commit -m "Third commit style"
+[chore/display-logic 21f3667] Third commit style
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+21f3667 (HEAD -> chore/display-logic) Third commit style
+bc9d18a Third commit index
+ec66b88 Second commit index
+41c70e5 First commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git rebase -i HEAD~4
+[detached HEAD 30b49f7] Commit for branch chore/display-logic
+ Date: Sun Oct 26 10:27:31 2025 +0200
+ 3 files changed, 13 insertions(+), 6 deletions(-)
+Successfully rebased and updated refs/heads/chore/display-logic.
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git log --oneline
+30b49f7 (HEAD -> chore/display-logic) Commit for branch chore/display-logic
+d5ba0bc (origin/main, origin/chore/display-logic, origin/HEAD, main) Initial commit
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 859 bytes | 859.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/krasigel/SEDO_Regular-Exam-1.git
+   d5ba0bc..30b49f7  chore/display-logic -> chore/display-logic
+PS C:\Users\lingv\Desktop\Exam\SEDO_Regular-Exam-1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
